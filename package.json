@@ -1,0 +1,34 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "description": "starter HTML template",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch": "npm-run-all --parallel watch-*",
+    "watch-scss": "sass src/scss:wwwroot/css --watch --color",
+    "watch-ts": "tsc -w",
+    "watch-server": "live-server ./wwwroot",
+    "compile": "npm-run-all --parallel compile-*",
+    "compile-scss": "sass src/scss:wwwroot/css --color ",
+    "compile-ts": "tsc",
+    "publish-to-docs": "npm run compile & shx rm -r ./docs/* & shx cp -r ./wwwroot/* ./docs"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JS"
+  ],
+  "author": "Elseif Software",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.50.0",
+    "shx": "^0.3.4",
+    "typescript": "^4.6.3"
+  }
+}
