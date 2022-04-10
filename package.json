@@ -1,8 +1,11 @@
 {
-  "name": "html-template",
+  "name": "html-scss-ts-template",
   "version": "1.0.0",
-  "description": "starter HTML template",
-  "main": "index.js",
+  "description": "Template including HTML, SCSS and TypeScript. Also supports github pages",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elseif-Software/html-scss-ts-template.git"
+  },
   "directories": {
     "doc": "docs"
   },
@@ -19,8 +22,7 @@
   "keywords": [
     "HTML",
     "CSS",
-    "SCSS",
-    "JS"
+    "SCSS"
   ],
   "author": "Elseif Software",
   "license": "MIT",
